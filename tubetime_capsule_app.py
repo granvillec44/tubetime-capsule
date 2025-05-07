@@ -15,10 +15,8 @@ if st.button("Generate Search Links"):
         parsed_date = datetime.strptime(date_input, "%B %d, %Y")
         date_formats = [
             "%B %d, %Y",  # January 10, 1985
-            "%b %d, %Y",  # Jan 10, 1985
             "%m/%d/%y",   # 01/10/85
             "%Y-%m-%d",   # 1985-01-10
-            "%m-%d-%y"    # 01-10-85
         ]
         formatted_dates = [parsed_date.strftime(fmt) for fmt in date_formats]
 
